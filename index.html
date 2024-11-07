@@ -27,110 +27,135 @@
             <p>Your one-stop destination for everything about dogs.</p>
         </section>
 
-        <!-- Dog Breed Selector -->
-        <section id="breed-selector" class="breed-section">
-            <h2>Select Dog Breed</h2>
-            <label for="breed">Choose a dog breed:</label>
-            <select id="breed" onchange="highlightTable()">
-                <option value="none">-- Select Breed --</option>
-                <option value="german-shepherd">German Shepherd</option>
-                <option value="labrador-retriever">Labrador Retriever</option>
-                <option value="cocker-spaniel">Cocker Spaniel</option>
-                <option value="golden-retriever">Golden Retriever</option>
-            </select>
-        </section>
+        <div class="main-content">
+            <!-- Dog Breed Selector -->
+            <section id="breed-selector" class="breed-section">
+                <h2>Select Dog Breed</h2>
+                <label for="breed">Choose a dog breed:</label>
+                <select id="breed" onchange="highlightTable()">
+                    <option value="none">-- Select Breed --</option>
+                    <option value="german-shepherd">German Shepherd</option>
+                    <option value="labrador-retriever">Labrador Retriever</option>
+                    <option value="cocker-spaniel">Cocker Spaniel</option>
+                    <option value="golden-retriever">Golden Retriever</option>
+                </select>
+            </section>
 
-        <!-- Dog Weight Tables -->
-        <section id="breed-weight-tables" class="table-section">
-            <h2>Breed Weight Information</h2>
+            <!-- Dog Weight Tables and Form Section -->
+            <section id="breed-weight-tables" class="table-section">
+                <h2>Breed Weight Information</h2>
 
-            <!-- German Shepherd Table -->
-            <div id="german-shepherd-table" class="dog-table">
-                <h3>German Shepherd</h3>
-                <table>
-                    <tr>
-                        <th>Gender</th>
-                        <th>Weight Range (kg)</th>
-                    </tr>
-                    <tr>
-                        <td>Male</td>
-                        <td>30 - 40</td>
-                    </tr>
-                    <tr>
-                        <td>Female</td>
-                        <td>22 - 32</td>
-                    </tr>
-                </table>
-            </div>
+                <!-- German Shepherd Table -->
+                <div id="german-shepherd-table" class="dog-table">
+                    <h3>German Shepherd</h3>
+                    <table>
+                        <tr>
+                            <th>Gender</th>
+                            <th>Weight Range (kg)</th>
+                        </tr>
+                        <tr>
+                            <td>Male</td>
+                            <td>30 - 40</td>
+                        </tr>
+                        <tr>
+                            <td>Female</td>
+                            <td>22 - 32</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <!-- Labrador Retriever Table -->
-            <div id="labrador-retriever-table" class="dog-table">
-                <h3>Labrador Retriever</h3>
-                <table>
-                    <tr>
-                        <th>Gender</th>
-                        <th>Weight Range (kg)</th>
-                    </tr>
-                    <tr>
-                        <td>Male</td>
-                        <td>29 - 36</td>
-                    </tr>
-                    <tr>
-                        <td>Female</td>
-                        <td>25 - 32</td>
-                    </tr>
-                </table>
-            </div>
+                <!-- Labrador Retriever Table -->
+                <div id="labrador-retriever-table" class="dog-table">
+                    <h3>Labrador Retriever</h3>
+                    <table>
+                        <tr>
+                            <th>Gender</th>
+                            <th>Weight Range (kg)</th>
+                        </tr>
+                        <tr>
+                            <td>Male</td>
+                            <td>29 - 36</td>
+                        </tr>
+                        <tr>
+                            <td>Female</td>
+                            <td>25 - 32</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <!-- Cocker Spaniel Table -->
-            <div id="cocker-spaniel-table" class="dog-table">
-                <h3>Cocker Spaniel</h3>
-                <table>
-                    <tr>
-                        <th>Gender</th>
-                        <th>Weight Range (kg)</th>
-                    </tr>
-                    <tr>
-                        <td>Male</td>
-                        <td>13 - 16</td>
-                    </tr>
-                    <tr>
-                        <td>Female</td>
-                        <td>12 - 15</td>
-                    </tr>
-                </table>
-            </div>
+                <!-- Cocker Spaniel Table -->
+                <div id="cocker-spaniel-table" class="dog-table">
+                    <h3>Cocker Spaniel</h3>
+                    <table>
+                        <tr>
+                            <th>Gender</th>
+                            <th>Weight Range (kg)</th>
+                        </tr>
+                        <tr>
+                            <td>Male</td>
+                            <td>13 - 16</td>
+                        </tr>
+                        <tr>
+                            <td>Female</td>
+                            <td>12 - 15</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <!-- Golden Retriever Table -->
-            <div id="golden-retriever-table" class="dog-table">
-                <h3>Golden Retriever</h3>
-                <table>
-                    <tr>
-                        <th>Gender</th>
-                        <th>Weight Range (kg)</th>
-                    </tr>
-                    <tr>
-                        <td>Male</td>
-                        <td>30 - 34</td>
-                    </tr>
-                    <tr>
-                        <td>Female</td>
-                        <td>25 - 29</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
+                <!-- Golden Retriever Table -->
+                <div id="golden-retriever-table" class="dog-table">
+                    <h3>Golden Retriever</h3>
+                    <table>
+                        <tr>
+                            <th>Gender</th>
+                            <th>Weight Range (kg)</th>
+                        </tr>
+                        <tr>
+                            <td>Male</td>
+                            <td>30 - 34</td>
+                        </tr>
+                        <tr>
+                            <td>Female</td>
+                            <td>25 - 29</td>
+                        </tr>
+                    </table>
+                </div>
 
-        <!-- Gallery Section -->
-        <section id="gallery" class="gallery-section">
-            <h2>Dog Gallery</h2>
-            <div class="gallery">
-                <img src="https://www.dogstrust.org.uk/images/800x600/assets/2022-08/labrador_puppy_harefield_dogstrust.jpg" alt="Dog 1">
-                <img src="https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/4e17ec01-850d-4fda-a446-e68ff71854ba/German+Shepherds+dans+pet+care.jpeg" alt="Dog 2">
-                <img src="https://dogsinc.org/wp-content/uploads/2022/09/04.21.2022_SGD7186-X3.jpg" alt="Dog 3">
-                <img src="https://www.akc.org/wp-content/uploads/2017/11/English-Cocker-Spaniel-Slide03.jpg" alt="Dog 4">
-            </div>
-        </section>
+                <!-- Form and Gallery Section Inline -->
+                <div class="form-gallery-container">
+                    <!-- Side Form Section -->
+                    <aside class="form-section">
+                        <h2>Join Our Community</h2>
+                        <form>
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" placeholder="Enter your First Name">
+                            
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" placeholder="Enter your Last Name">
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                            
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" placeholder="Enter your password">
+                            
+                            <input type="submit" value="Submit">
+                        </form>
+                    </aside>
+
+                    <!-- Gallery Section -->
+                    <section id="gallery" class="gallery-section">
+                        <h2>Dog Gallery</h2>
+                        <div class="gallery">
+                            <img src="https://www.dogstrust.org.uk/images/800x600/assets/2022-08/labrador_puppy_harefield_dogstrust.jpg" alt="Dog 1">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/4e17ec01-850d-4fda-a446-e68ff71854ba/German+Shepherds+dans+pet+care.jpeg" alt="Dog 2">
+                            <img src="https://dogsinc.org/wp-content/uploads/2022/09/04.21.2022_SGD7186-X3.jpg" alt="Dog 3">
+                            <img src="https://www.akc.org/wp-content/uploads/2017/11/English-Cocker-Spaniel-Slide03.jpg" alt="Dog 4">
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
 
         <!-- About Us Section -->
         <section id="about-us" class="about-section">
