@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Lovers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Dog Lovers</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <h1>Welcome to Dog Lovers!</h1>
+            <p>Your one-stop destination for everything about dogs.</p>
+        </section>
+
+        <!-- Dog Breed Selector -->
+        <section id="breed-selector" class="breed-section">
+            <h2>Select Dog Breed</h2>
+            <label for="breed">Choose a dog breed:</label>
+            <select id="breed" onchange="highlightTable()">
+                <option value="none">-- Select Breed --</option>
+                <option value="german-shepherd">German Shepherd</option>
+                <option value="labrador-retriever">Labrador Retriever</option>
+                <option value="cocker-spaniel">Cocker Spaniel</option>
+                <option value="golden-retriever">Golden Retriever</option>
+            </select>
+        </section>
+
+        <!-- Dog Weight Tables -->
+        <section id="breed-weight-tables" class="table-section">
+            <h2>Breed Weight Information</h2>
+
+            <!-- German Shepherd Table -->
+            <div id="german-shepherd-table" class="dog-table">
+                <h3>German Shepherd</h3>
+                <table>
+                    <tr>
+                        <th>Gender</th>
+                        <th>Weight Range (kg)</th>
+                    </tr>
+                    <tr>
+                        <td>Male</td>
+                        <td>30 - 40</td>
+                    </tr>
+                    <tr>
+                        <td>Female</td>
+                        <td>22 - 32</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Labrador Retriever Table -->
+            <div id="labrador-retriever-table" class="dog-table">
+                <h3>Labrador Retriever</h3>
+                <table>
+                    <tr>
+                        <th>Gender</th>
+                        <th>Weight Range (kg)</th>
+                    </tr>
+                    <tr>
+                        <td>Male</td>
+                        <td>29 - 36</td>
+                    </tr>
+                    <tr>
+                        <td>Female</td>
+                        <td>25 - 32</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Cocker Spaniel Table -->
+            <div id="cocker-spaniel-table" class="dog-table">
+                <h3>Cocker Spaniel</h3>
+                <table>
+                    <tr>
+                        <th>Gender</th>
+                        <th>Weight Range (kg)</th>
+                    </tr>
+                    <tr>
+                        <td>Male</td>
+                        <td>13 - 16</td>
+                    </tr>
+                    <tr>
+                        <td>Female</td>
+                        <td>12 - 15</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Golden Retriever Table -->
+            <div id="golden-retriever-table" class="dog-table">
+                <h3>Golden Retriever</h3>
+                <table>
+                    <tr>
+                        <th>Gender</th>
+                        <th>Weight Range (kg)</th>
+                    </tr>
+                    <tr>
+                        <td>Male</td>
+                        <td>30 - 34</td>
+                    </tr>
+                    <tr>
+                        <td>Female</td>
+                        <td>25 - 29</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <h2>Dog Gallery</h2>
+            <div class="gallery">
+                <img src="https://www.dogstrust.org.uk/images/800x600/assets/2022-08/labrador_puppy_harefield_dogstrust.jpg" alt="Dog 1">
+                <img src="https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/4e17ec01-850d-4fda-a446-e68ff71854ba/German+Shepherds+dans+pet+care.jpeg" alt="Dog 2">
+                <img src="https://dogsinc.org/wp-content/uploads/2022/09/04.21.2022_SGD7186-X3.jpg" alt="Dog 3">
+                <img src="https://www.akc.org/wp-content/uploads/2017/11/English-Cocker-Spaniel-Slide03.jpg" alt="Dog 4">
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="about-section">
+            <h2>About Us</h2>
+            <p>We are a group of dog enthusiasts who created this platform to share our love for dogs with the world. Here, you can find information about different dog breeds, training tips, and much more.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
